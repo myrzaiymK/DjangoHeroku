@@ -2,3 +2,11 @@
 Создать репозиторий гитхаб
 
 Создать приложение на Heroku и связать с гитхаб
+
+pipenv --venv
+pipenv install django
+pipenv install --dev black
+pipenv run django-admin startproject core
+mv core src
+pipenv run python manage.py runserver
+
