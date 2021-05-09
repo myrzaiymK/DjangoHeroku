@@ -10,3 +10,9 @@ pipenv run django-admin startproject core
 mv core src
 pipenv run python manage.py runserver
 
+Создаем Procfile вносим изменения 
+дальше здесь https://dashboard.heroku.com/apps/kayratedu/settings
+Config Vars -> Reveal Config Vars 
+Key -> DISABLE_COLLECTSTATIC
+Value -> 1
+Пушим проект на гитхаб 
